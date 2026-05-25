@@ -1,0 +1,27 @@
+name: "OPNsense Devices"
+version: "1.0.2"
+slug: "opnsense_scanner"
+description: "Mobile-first network scanner for OPNsense."
+arch:
+  - aarch64
+  - amd64
+  - armv7
+init: false
+map:
+  - share:rw
+options:
+  opnsense_url: "https://opnsense/api/dnsmasq/leases/search"
+  api_key: "your_key_here"
+  api_secret: "your_secret_here"
+  webhook_url: ""
+schema:
+  opnsense_url: str
+  api_key: str
+  api_secret: str
+  webhook_url: str?
+ingress: true
+ingress_port: 5001
+panel_icon: mdi:network-outline
+panel_title: "Network Devices"
+ports:
+  5001/tcp: 5001
