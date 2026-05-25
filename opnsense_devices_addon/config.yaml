@@ -1,5 +1,5 @@
 name: "OPNsense Devices"
-version: "1.0.2"
+version: "1.0.4"
 slug: "opnsense_scanner"
 description: "Mobile-first network scanner for OPNsense."
 arch:
