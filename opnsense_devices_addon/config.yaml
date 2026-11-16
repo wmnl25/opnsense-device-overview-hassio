@@ -1,5 +1,5 @@
 name: "OPNsense Devices"
-version: "1.0.4"
+version: "1.1.0"
 slug: "opnsense_scanner"
 description: "Mobile-first network scanner for OPNsense."
 arch:
@@ -14,11 +14,13 @@ options:
   api_key: "your_key_here"
   api_secret: "your_secret_here"
   webhook_url: ""
+  enable_aliases: false
 schema:
   opnsense_url: str
   api_key: str
   api_secret: str
   webhook_url: str?
+  enable_aliases: bool
 ingress: true
 ingress_port: 5001
 panel_icon: mdi:network-outline
